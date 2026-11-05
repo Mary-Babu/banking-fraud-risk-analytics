@@ -3,7 +3,7 @@
 
 By Mary Babu
 
-A bank's fraud rate looks reassuring on paper, 0.073% of 200,000 mobile money transactions in this dataset are actually fraud. That number alone would tell a risk team almost nothing about where to look. This project digs into 200,000 real transactions (a subset of the PaySim dataset, a widely used mobile money simulation built to mirror real transaction behavior) to find out where fraud actually concentrates, whether the existing detection rule is doing its job, and whether a model adds anything beyond what a manual review already shows.
+A bank's fraud rate looks reassuring on paper, 0.073% of 200,000 mobile money transactions in this dataset are actually fraud. That number alone would tell a risk team almost nothing about where to look. This project digs into 200,000 simulated transactions (a subset of the PaySim dataset, a widely used mobile money simulation built to mirror real transaction behavior) to find out where fraud actually concentrates, whether the existing detection rule is doing its job, and whether a model adds anything beyond what a manual review already shows.
 
 ## The approach
 
@@ -43,7 +43,7 @@ Restrict real-time fraud monitoring to TRANSFER and CASH_OUT transactions first,
 
 ## Files
 
-`payments_200k.csv` is the source data (200,000 real PaySim mobile money transactions, sourced from the public PaySim dataset). `fraud_analysis.ipynb` is the full analysis notebook: data quality checks, segmentation, the existing rule's effectiveness, model comparison, and feature importance. `queries.sql` is the SQL layer behind the dashboard, covering executive overview, payment performance, fraud and risk, and data quality. `dashboard_spec.md` is the page-by-page spec for building the Power BI dashboard from these queries. `chart1.png` through `chart4.png` are the charts from the notebook.
+`payments_200k.csv` is the source data (200,000 simulated PaySim mobile money transactions, sourced from the public PaySim dataset). `fraud_analysis.ipynb` is the full analysis notebook: data quality checks, segmentation, the existing rule's effectiveness, model comparison, and feature importance. `queries.sql` is the SQL layer behind the dashboard, covering executive overview, payment performance, fraud and risk, and data quality. `dashboard_spec.md` is the page-by-page spec for building the Power BI dashboard from these queries. `chart1.png` through `chart4.png` are the charts from the notebook.
 
 ## Tech stack
 
